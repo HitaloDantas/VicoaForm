@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <form method="post" novalidate>
+    {% csrf_token %}
+
+      <div id="clock" style="font-size: 60px;"></div>
+
+      <div class="row">
+        <input class="textinput textInput form-control-lg" type="text" name="usuario" value="{{ request.user }}" readonly="readonly">
+      </div>
+
+      <br>
+
+      <div class="row">
+        <button onclick="myFunction()" type="submit" class="btn btn-success">Registrar Ponto</button>
+      </div>
+
+  </form>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <form method="post" novalidate>
+    {% csrf_token %}
+
+      <div class="row">
+        <div class="col px-md-1"> {{ form.nome|as_crispy_field }} </div>
+        <div class="col px-md-1"> {{ form.cpf|as_crispy_field }} </div>
+        <div class="col px-md-1"> {{ form.nascimento|as_crispy_field }} </div>
+      </div>
+
+      <div class="row">
+        <div class="col px-md-1">{{ form.login_crm|as_crispy_field }}</div>
+        <div class="col px-md-1">{{ form.senha_crm|as_crispy_field }}</div>
+        <div class="col px-md-1">{{ form.id_fast|as_crispy_field }}</div>
+      </div>
+
+      <div class="row">
+        <div class="col px-md-1">{{ form.permissao|as_crispy_field }}</div>
+        <div class="col px-md-1">{{ form.skill|as_crispy_field }}</div>
+        <div class="col px-md-1">{{ form.empresa|as_crispy_field }}</div>
+        <div class="col px-md-1">{{ form.status|as_crispy_field }}</div>
+        <div class="col px-md-1">{{ form.telefone1|as_crispy_field }}</div>
+        <div class="col px-md-1">{{ form.telefone2|as_crispy_field }}</div>
+      </div>
+
+
+      <div class="col px-md-1 form-group">
+        <label for="ControlFile1">Anexar Foto</label>
+        <input type="file" class="form-control-file" id="ControlFile1">
+      </div>
+
+      <div class="col px-md-1 form-group">
+        <label for="ControlFile2">Anexar Arquivos</label>
+        <input type="file" class="form-control-file" id="ControlFile2">
+      </div>
+
+      <br>
+
+    <div class="row">
+      <button type="submit" class="btn btn-success">Registrar</button>
+
+      <a class="btn btn-primary"  href="/pie-chart">Cancelar</a>
+    </div>
+  </form>
+{% endblock %}

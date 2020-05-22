@@ -1,0 +1,119 @@
+{% load crispy_forms_tags %}
+{% load static %}
+<html lang="pt-br">
+  <head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>CRM Vicoa web</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'source/css/bootstrap.min.css' %}"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+      <script>
+
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('clock').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+
+
+        function myFunction() {
+            alert("Você bateu o ponto!");
+        }
+
+
+
+      </script>
+
+  </head>
+
+  <body onload="startTime()">
+
+  <header>
+      <!--NAVBAR MENU SUPERIOR-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+
+      <a class="navbar-brand" href="#" >CRM Grupo Vicoa</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+
+            {% if user.is_authenticated %}
+
+              <!--<li class="nav-item">
+                <a class="nav-link" href="/pie-chart">Dashboard</a>
+              </li>-->
+
+              <!--<li class="nav-item">
+                <a class="nav-link" href="/ponto">Ponto</a>
+              </li>-->
+
+              <!--<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Usuário
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="/add">Novo Cadastro</a>
+                  <a class="dropdown-item" href="/list">Listar Usuários</a>
+                  <a class="dropdown-item" href="#">Buscar</a>
+                </div>
+              </li>-->
+
+            {% else %}
+             <li class="nav-item">
+                <a class="nav-link" href="/accounts/login">Entrar</a>
+             </li>
+            {% endif %}
+
+             <li class="nav-item">
+                <a class="nav-link" href="https://grupovicoabrasil.com.br/site/" target="_blank">Sobre</a>
+             </li>
+
+            {% if user.is_authenticated %}
+             <li class="nav-item">
+                 <a class="nav-link" href="/accounts/logout">Sair</a>
+             </li>
+            {% endif %}
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+        <div class="container float-left">
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <hr class="mt-0 mb-4">
+              {% block content %}
+              {% endblock %}
+            </div>
+          </div>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="{% static 'source/js/bootstrap.min.js' %}"></script>
+
+  </body>
+
+ </html>

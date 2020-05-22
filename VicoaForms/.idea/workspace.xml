@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="94f656c8-ad5b-4c6c-a9b3-1722e987a309" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aSkvlCcLr7CdXEbSIHEGtYDPsq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hital\PycharmProjects\VicoaForms\simpleproject\people\templates\people" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94f656c8-ad5b-4c6c-a9b3-1722e987a309" name="Default Changelist" comment="" />
+      <created>1586736615205</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586736615205</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="272" y="27" key="#Inspections" timestamp="1588428793057">
+      <screen x="0" y="0" width="1360" height="738" />
+    </state>
+    <state x="272" y="27" key="#Inspections/0.0.1360.738@0.0.1360.738" timestamp="1588428793057" />
+    <state x="438" y="240" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586980296203">
+      <screen x="0" y="0" width="1360" height="738" />
+    </state>
+    <state x="438" y="240" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1360.738@0.0.1360.738" timestamp="1586980296203" />
+    <state x="460" y="124" key="FileChooserDialogImpl" timestamp="1589482506153">
+      <screen x="0" y="0" width="1360" height="738" />
+    </state>
+    <state x="460" y="124" key="FileChooserDialogImpl/0.0.1360.738@0.0.1360.738" timestamp="1589482506153" />
+    <state x="181" y="11" key="SettingsEditor" timestamp="1590001087924">
+      <screen x="0" y="0" width="1360" height="738" />
+    </state>
+    <state x="181" y="11" key="SettingsEditor/0.0.1360.738@0.0.1360.738" timestamp="1590001087924" />
+    <state x="401" y="110" width="540" height="524" key="StructurePopup" timestamp="1589869083719">
+      <screen x="0" y="0" width="1360" height="738" />
+    </state>
+    <state x="401" y="110" width="540" height="524" key="StructurePopup/0.0.1360.738@0.0.1360.738" timestamp="1589869083719" />
+    <state x="376" y="101" width="607" height="536" key="find.popup" timestamp="1589996981931">
+      <screen x="0" y="0" width="1360" height="738" />
+    </state>
+    <state x="376" y="101" width="607" height="536" key="find.popup/0.0.1360.738@0.0.1360.738" timestamp="1589996981931" />
+    <state x="343" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1587653048222">
+      <screen x="0" y="0" width="1360" height="738" />
+    </state>
+    <state x="343" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1360.738@0.0.1360.738" timestamp="1587653048222" />
+  </component>
+</project>

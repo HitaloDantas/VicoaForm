@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <table class="table table-bordered">
+
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Cpf</th>
+        <th>Nascimento</th>
+        <th>Login CRM</th>
+        <th>Senha CRM</th>
+        <th>ID Fast</th>
+        <th>Permissão</th>
+        <th>Skill</th>
+        <th>Empresa</th>
+        <th>Status</th>
+        <th>Telefone 1</th>
+        <th>Telefone 2</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for person in people %}
+
+        <tr>
+          <td>{{ person.nome }}</td>
+          <td>{{ person.cpf }}</td>
+          <td>{{ person.nascimento }}</td>
+          <td>{{ person.login_crm }}</td>
+          <td>{{ person.senha_crm }}</td>
+          <td>{{ person.id_fast }}</td>
+          <td>{{ person.permissao }}</td>
+          <td>{{ person.skill }}</td>
+          <td>{{ person.empresa }}</td>
+          <td>{{ person.status }}</td>
+          <td>{{ person.telefone1 }}</td>
+          <td>{{ person.telefone2 }}</td>
+        </tr>
+
+      {% empty %}
+        <tr class="table-active">
+          <td colspan="3">No data</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
