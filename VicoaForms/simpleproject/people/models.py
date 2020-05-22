@@ -43,6 +43,7 @@ class Ponto(models.Model):
     usuario = models.CharField(max_length=255)
     data_horario = models.DateTimeField(auto_now_add=True)
 
+    '''Class ponto eletronico'''
 
     class Meta:
         db_table = "ponto_eletronico"
