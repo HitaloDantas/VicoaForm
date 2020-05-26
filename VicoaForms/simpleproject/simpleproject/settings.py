@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'simpleproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'crm_gvb',
@@ -89,19 +89,7 @@ WSGI_APPLICATION = 'simpleproject.wsgi.application'
         'HOST': 'localhost',
         'PORT': '3306',
     }
-}'''
-
-DATABASES = {
-    'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'DJANGO',
-    'USER': 'tecnologia.vicoa',
-    'PASSWORD': 'N3XeV}Y7@,VhE!5#',
-    'HOST': '35.237.88.110',
-    'PORT': '3306',
-    }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
