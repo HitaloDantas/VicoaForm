@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'simpleproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'crm_gvb',
+        'NAME': 'db',
         'USER': 'root',
         'PASSWORD': '2222',
         'HOST': 'localhost',
