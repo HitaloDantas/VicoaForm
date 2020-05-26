@@ -85,7 +85,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'crm_gvb',
         'USER': 'root',
-        'PASSWORD': '7476',
+        'PASSWORD': '2222',
         'HOST': 'localhost',
         'PORT': '3306',
     }
